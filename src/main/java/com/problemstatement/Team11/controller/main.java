@@ -170,7 +170,7 @@ public class main {
         String usermail=principal.getAttribute("email");
 
 /////////////////////////////mail sending
-        String temp="http://localhost:8080/login/"+String.valueOf(res.getRid());
+        String temp="https://sincere-bongo-339717.an.r.appspot.com/login/"+String.valueOf(res.getRid());
         String Htmlbody="<h3>Dear "+ principal.getAttribute("name").toString() +"</h3></br>"
                 + "<p>Your meeting room request status: <h4> "+ status +"</h4><br>"
                 + "<strong>Team11.org </strong>.</p>" + "</br></br>"
@@ -215,7 +215,7 @@ public class main {
         repo.save(requestcreated);
 
 
-        String temp="http://localhost:8080/login/"+String.valueOf(requestcreated.getRid());
+        String temp="https://sincere-bongo-339717.an.r.appspot.com/login/"+String.valueOf(requestcreated.getRid());
         //////////////////
         String Htmlbody="<h3>Dear "+ principal.getAttribute("name").toString() +"</h3></br>"
                 + "<p>We have received your application. <br>"
